@@ -1,0 +1,115 @@
+
+// Importamos tipografías
+@import "tipografia";
+
+a {
+    font-family: $tipografia-navegador;
+    list-style: none;
+    font-size: 1em;
+    color: whitesmoke;
+    margin: 0.4vw;
+    padding: 0.4vw;
+
+    @media screen and (min-width:768px) {
+        font-size: 2em;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 4em;
+    }
+  }
+
+  .trilce_name {
+    font-family:  $tipografia-titulos;
+    font-stretch: semi-expanded;
+    font-size: 1rem;
+    
+    @media screen and (min-width:768px){
+        font-size: 1.8em;
+    }
+    @media screen and (min-width:1200px){
+        font-size: 2em;
+    }
+
+  }
+
+body{
+    height: 100vh;
+    background: linear-gradient(100deg, #f2cbc4, #df859e);
+    
+    header{
+        width: 100%;
+        height: auto;
+
+        .img-fluid{
+            max-height: 90vh;
+            width: auto;
+          }
+    
+        #w1{
+            animation: fadeIn;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 8s;
+            animation-delay: 0.2s;
+            animation-fill-mode: forwards;
+        }
+    }
+    
+    h1, 
+    h2{
+        font-size: 1.4em;
+        font-family: $tipografia-titulos;
+        
+        @media screen and (min-width:768px) {
+            font-size: 2em;
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 4em;
+        }
+
+    }
+
+    p{
+        font-family: $tipografia-parrafos;
+        font-size: 0.8em;
+
+        @media screen and (min-width:768px) {
+            font-size: 1.5em;
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 2.8em;
+        }
+
+    }
+
+    .footer{
+        background-size: 100vw;
+        width: 100%;
+        height: auto;
+        background-position: center;
+
+        h2{
+            color: #F3CAC4;
+            font-size: 1em; 
+            
+            @media screen and (min-width:768px){
+                font-size: 2em;
+            }
+            @media screen and (min-width:1200px){
+                font-size: 1.85em;
+            }
+        }
+    }
+    
+}
+
+
+
+
+@keyframes fadeIn {
+0% {
+    opacity:0;}
+
+100% {visibility: visible;
+    opacity:1;}
+}
